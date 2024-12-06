@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>ProgressPal</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link rel="stylesheet" href="assets/plugins/metro/MetroJs.min.css">
+        <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+        <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/plugins/animate/animate.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+        <link href="assets/plugins/c3/c3.min.css" rel="stylesheet" type="text/css"  />
+
+        <link href="assets/plugins/fullcalendar/css/fullcalendar.min.css" rel="stylesheet" />
+
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/ppal-logo-transparent.png" alt="" class="logo-small">
+                            <img src="assets/images/ppal-logo-transparent.png" alt="" height="75" weight="75">
+                        </a>
+
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras topbar-custom">
+
+                        <ul class="list-inline float-right mb-0 ">
+                                <!-- language-->
+
+                            <li class="list-inline-item dropdown notification-list">
+                                <div class="dropdown notification-list nav-pro-img">
+                                    <a class="dropdown-toggle nav-link arrow-none waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                        <img src="assets/images/users/dog.jpeg" alt="user" class="rounded-circle">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                        <!-- item-->
+                                        <div class="dropdown-item noti-title">
+                                            <h5>Welcome</h5>
+                                        </div>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a>
+                                        <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">5</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                                    </div>                                                                    
+                                </div>
+                            </li>
+                            <li class="menu-item list-inline-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link" id="mobileToggle">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>    
+                        </ul>
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <!-- MENU Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="index.html"><i class="mdi mdi-airplay"></i>Home</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="calendar.html"><i class="mdi mdi-calendar"></i>Calendar</a>                                
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="charts-c3.html"><i class="mdi mdi-gauge"></i>Analytics</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="mdi mdi-google-pages"></i>User Login</a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="pages-login.html">Login</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="pages-register.html">Register</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group float-right">
+                                <ol class="breadcrumb hide-phone p-0 m-0">
+                                    <li class="breadcrumb-item"><a href="#">ProgressPal</a></li>
+                                    <li class="breadcrumb-item active">Home</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Home</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+
+
+                <div class="row">
+                    <div class="col-md-12 col-xl-3">
+                        <div class="card mini-stat">
+                            <div class="mini-stat-icon text-right">
+                                <i class="mdi mdi-cube-outline"></i>
+                            </div>
+                            <div class="p-4">
+                                <h6 class="text-uppercase mb-3">Today's Total Tasks:</h6>
+                                <h4 class="mb-0">6<small class="ml-2"></small></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-xl-3">
+                        <div class="card mini-stat">
+                            <div class="mini-stat-icon text-right">
+                                <i class="mdi mdi-buffer"></i>
+                            </div>
+                            <div class="p-4">
+                                <h6 class="text-uppercase mb-3">Most Frequent Task:</h6>
+                                <h4 class="mb-0">Studying<small class="ml-2"></small></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-xl-3">
+                        <div class="card mini-stat">
+                            <div class="mini-stat-icon text-right">
+                                <i class="mdi mdi-tag-text-outline"></i>
+                            </div>
+                            <div class="p-4">
+                                <h6 class="text-uppercase mb-3">Average Time on Task:</h6>
+                                <div class="float-right">
+                                    <p class="mb-0"><b>Last:</b> 54:39</p>
+                                </div>
+                                <h4 class="mb-0">44:54<small class="ml-2"><i class="mdi mdi-arrow-down text-danger"></i></small></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-3">
+                        <div class="card mini-stat">
+                            <div class="mini-stat-icon text-right">
+                                <i class="mdi mdi-briefcase-check"></i>
+                            </div>
+                            <div class="p-4">
+                                <h6 class="text-uppercase mb-3">Next Task:</h6>
+                                <h4 class="mb-0">Reading<small class="ml-2"></small></h4>
+                            </div>
+                        </div>
+
+                    </div>                                            
+                </div><!-- end row -->
+
+                <div class="row">
+                    <div class="col-11">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div id='calendar' class="col-xl-12 col-lg-9 col-md-8"></div>
+                                </div>
+                                <!-- end row -->
+
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                </div> 
+                </div><!-- end row-->
+                </div>
+                    
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        2024 ProgressPal by J.O.S.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/plugins/metro/MetroJs.min.js"></script>
+        <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="assets/plugins/sparkline-chart/jquery.sparkline.min.js"></script>
+        <script src="assets/plugins/morris/morris.min.js"></script>
+        <script src="assets/plugins/raphael/raphael-min.js"></script>
+        <script src="assets/pages/dashboard.js"></script>
+
+        <script src="assets/plugins/d3/d3.min.js"></script>
+        <script src="assets/plugins/c3/c3.min.js"></script>
+        <script src="assets/pages/c3-chart-init.js"></script>
+
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/plugins/moment/moment.js"></script>
+        <script src='assets/plugins/fullcalendar/js/fullcalendar.min.js'></script>
+        <script src="assets/pages/calendar-init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>
